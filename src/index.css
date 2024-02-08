@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/inter-v13-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/inter-v13-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/inter-v13-latin-700.woff2") format("woff2");
+}
+
+@layer components {
+  html, body {
+    @apply h-full;
+  }
+  #root {
+    @apply flex flex-col h-full;
+  }
+  .max-container {
+    @apply max-w-7xl w-full mx-auto px-5;
+  }
+  .hoverEl{
+    @apply hover:text-orange-500 hover:transition
+
+  }
+}
